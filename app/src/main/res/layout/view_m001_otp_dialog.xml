@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#80000000"
+    android:padding="@dimen/d_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/d_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorOrange"
+            android:padding="@dimen/d_5">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/d_16"
+                android:src="@drawable/ic_back"
+                app:tint="@color/white"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/d_40"
+                android:gravity="center"
+                android:padding="@dimen/d_10"
+                android:text="@string/confirm_phone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s_20"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/tv_otp_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/d_12"
+            android:gravity="center_horizontal"
+            android:text="@string/otp_sent"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/s_20"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_enter_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/d_30"
+            android:layout_marginTop="@dimen/d_20"
+            android:layout_marginRight="@dimen/d_30"
+            android:autofillHints="Nhập mã OTP"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="@string/enter_otp"
+            android:inputType="number"
+            android:padding="@dimen/d_10"
+            android:singleLine="true"
+            android:textColor="@color/colorOrange"
+            android:textColorHint="@color/lightOrange"
+            android:textSize="@dimen/s_25"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/d_40"
+            android:layout_marginRight="@dimen/d_40"
+            android:background="@color/colorOrange" />
+
+        <TextView
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/colorOrange"
+            android:gravity="center"
+            android:padding="@dimen/d_12"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s_20"
+            android:textStyle="bold" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">ICARKotlin</string>
+
+    <string name="txt_splash">đồ chơi công nghệ thông minh dành cho Ô tô</string>
+
+    <string name="txt_dang_nhap">Đăng nhập</string>
+
+    <string name="txt_phone">Số điện thoại</string>
+
+    <string name="txt_pass">Mật khẩu</string>
+
+    <string name="txt_new_pass">Nhập mật khẩu mới</string>
+
+    <string name="txt_forgot_pass">Quên mật khẩu? </string>
+
+
+    -<string name="txt_create_new_acc">
+    Bạn chưa có tài khoản?
+    <u> Tạo mới!</u>
+
+</string>
+
+    <string name="txt_register">Đăng ký</string>
+
+    <string name="txt_send_phone">Lấy lại mật khẩu</string>
+
+    <string name="txt_create_new_pass">Tạo mật khẩu mới</string>
+
+    <string name="txt_confirm_pass">Nhập lại mật khẩu</string>
+
+    <string name="txt_confirm_new_pass">Nhập lại mật khẩu mới</string>
+
+    <string name="confirm_phone">Xác thực số điện thoại</string>
+
+    <string name="otp_sent">Nhập mã xác nhận được gửi đến\n0398961689</string>
+
+    <string name="txt_menu_title">ICAR Tracking</string>
+
+    <string name="txt_driver_history">Lịch sử hành trình</string>
+
+    <string name="txt_monitor_car">Giám sát xe</string>
+
+    <string name="txt_invalid_phone">Số điện thoại không hợp lệ</string>
+
+    <string name="txt_my_location">Vị trí của tôi</string>
+
+    <string name="txt_car_info">Thông tin xe</string>
+
+    <string name="txt_exits_app">Đăng xuất ứng dụng</string>
+
+    <string name="create_new_pass_success">Đặt lại mật khẩu thành công</string>
+
+    <!-- <string name="maps_api_key">AIzaSyCuYdLubS3xlWBFzxRwyi0gipzWlG_XFxw</string>-->
+
+
+    <string name="txt_car_name">RX350</string>
+
+    <string name="txt_car_brand">Lexus</string>
+
+    <string name="txt_day">Hôm nay</string>
+
+    <string name="txt_detail_point">08:04 - Đang trên đường - 34km/h</string>
+
+    <string name="txt_detail_point_search">04/02/2021 08:04 - Đang trên đường - 34km/h</string>
+
+    <string name="txt_point_address">TechJA Số 5 Trung Kính, Trung Hòa, Cầu Giấy, Hà Nội, VN</string>
+
+    <string name="txt_user_info_title">Thông tin người dùng</string>
+
+    <string name="txt_close">Đóng</string>
+
+    <string name="txt_change_pass">Đổi mật khẩu</string>
+
+    <string name="select_picture">Select Picture</string>
+
+    <string name="txt_update">Cập nhật</string>
+
+    <string name="txt_user_name">Thân Văn Luân</string>
+
+    <string name="txt_old_pass">Nhập mật khẩu cũ</string>
+
+    <string name="txt_update_info_title">Thông tin cập nhật</string>
+
+    <string name="unavailable_internet">Mạng dữ liệu không khả dụng, thử lại sau!</string>
+
+    <string name="txt_car_license_plate">29A-8888</string>
+
+    <string name="enter_otp">Nhập mã OTP</string>
+
+    <string name="confirm">Xác nhận</string>
+
+    <string name="txt_reset_pass">Lấy lại mật khẩu</string>
+
+    <string name="txt_car_list">Danh sách xe</string>
+
+    <string name="txt_from_day">Từ ngày</string>
+
+    <string name="txt_to_day">Đến ngày</string>
+
+    <string name="txt_from_hour">giờ</string>
+
+    <string name="txt_time_line">Lịch sử</string>
+
+    <string name="txt_monitor">Giám sát</string>
+
+    <string name="txt_car_status">Trạng thái:</string>
+
+    <string name="txt_car_speed">Vận tốc:</string>
+
+    <string name="txt_warn_not_enough_info">Bạn chưa nhập đủ thông tin</string>
+
+    <string name="txt_warn_pass_at_last_6_length">Mật khẩu ít nhất là 6 ký tự!</string>
+
+    <string name="txt_warn_pass_not_match">Mật khẩu không khớp</string>
+
+    <string name="txt_phone_is_invalid">Số điện thoại không đúng định dạng</string>
+
+    <string name="txt_register_success">Đăng ký thành công!</string>
+
+    <string name="txt_warn_phone_exist">Số điện thoại này đã đăng ký, vui lòng kiểm tra lại</string>
+
+    <string name="txt_del_car">Thông báo</string>
+
+    <string name="txt_del_confirm">Xóa</string>
+
+    <string name="txt_cancel">Đóng lại</string>
+
+    <string name="txt_search_timeline">Tìm kiếm hành trình</string>
+
+    <string name="txt_time_line_history">Cung đường xe </string>
+
+    <string name="txt_car_pos">Vị trí xe</string>
+
+    <string name="txt_car_time">Thời gian:</string>
+
+    <string name="default_notification_channel_id">Thông báo</string>
+
+    <string name="txt_name_demo">Thân Văn Luân</string>
+
+    <string name="txt_phone_demo">0961234680</string>
+    <string name="maps_api_key">AIzaSyC2sCITWZk7-M5DQZe8UceUXlzQFVaFPxE</string>
+</resources>

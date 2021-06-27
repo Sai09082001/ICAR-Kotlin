@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_120"
+        android:background="@color/orangeDarkBG"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/d_89"
+            android:layout_height="@dimen/d_86"
+            android:layout_gravity="top"
+            android:layout_marginStart="@dimen/d_30"
+            android:layout_marginTop="@dimen/d_24"
+            android:src="@drawable/ic_avt_demo"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_20"
+                android:layout_marginTop="@dimen/d_25"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s_18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_20"
+                android:layout_marginTop="@dimen/d_10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s_16"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/tbr_my_location"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_80"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/d_44"
+            android:layout_height="@dimen/d_44"
+            android:layout_marginStart="@dimen/d_20"
+            android:padding="@dimen/d_5"
+            android:src="@drawable/ic_my_location"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/d_10"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="@string/txt_my_location"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s_18" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_1"
+        android:background="@color/line" />
+
+    <TableRow
+        android:id="@+id/tbr_my_car_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_80"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/d_44"
+            android:layout_height="@dimen/d_44"
+            android:layout_marginStart="@dimen/d_20"
+            android:padding="@dimen/d_5"
+            android:src="@drawable/ic_car_avt"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/d_10"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="@string/txt_car_list"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s_18" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_1"
+        android:background="@color/line" />
+
+    <TableRow
+        android:id="@+id/tbr_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_80"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/d_44"
+            android:layout_height="@dimen/d_44"
+            android:layout_marginStart="@dimen/d_20"
+            android:padding="@dimen/d_5"
+            android:src="@drawable/ic_avt_demo"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/d_20"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="@string/txt_user_info_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s_18" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_1"
+        android:background="@color/line" />
+
+    <TableRow
+        android:id="@+id/tbr_exits_app"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_80"
+        android:layout_marginStart="@dimen/d_5"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/d_44"
+            android:layout_height="@dimen/d_44"
+            android:layout_marginStart="@dimen/d_20"
+            android:padding="@dimen/d_5"
+            android:src="@drawable/ic_exit_app"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/d_10"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="@string/txt_exits_app"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s_18" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_1"
+        android:background="@color/line" />
+</LinearLayout>
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_orange_radius"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/d_10">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_circle"
+        android:indeterminateTint="@color/white"
+        android:padding="@dimen/d_10" />
+
+    <Button
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d_10"
+        android:backgroundTint="@color/orange"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-light"
+        android:padding="@dimen/d_12"
+        android:text="Dừng lại"
+        android:textColor="@color/white"
+        android:textSize="@dimen/s_16"
+        android:visibility="gone" />
+</LinearLayout>

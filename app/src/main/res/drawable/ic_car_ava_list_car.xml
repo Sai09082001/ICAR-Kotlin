@@ -1,0 +1,10 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:drawable="@drawable/ic_car_avt"
+    android:maxLevel="0"
+    android:minLevel="0" />
+<item
+    android:drawable="@drawable/ic_car_driving"
+    android:maxLevel="1"
+    android:minLevel="1" />
+</level-list>

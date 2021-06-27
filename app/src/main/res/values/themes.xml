@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+    <style parent="Theme.AppCompat.Light.NoActionBar" name="Theme.GPRSCarLocation">
+
+        <!-- Primary brand color. -->
+
+
+        <item name="colorPrimary">@color/orangeDarkBG</item>
+
+        <item name="colorPrimaryVariant">@color/orange</item>
+
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+
+
+        <item name="colorSecondary">@color/teal_200</item>
+
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color. -->
+
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+
+    </style>
+
+
+    <style parent="@android:style/Theme.Translucent" name="dialog_style_anim"/>
+
+    <style parent="Theme.AppCompat.Light.Dialog" name="datepicker">
+
+        <item name="colorAccent">@color/orangeDarkBG</item>
+
+        <item name="colorControlActivated">#E87063</item>
+
+        <item name="backgroundTint">#ffffff</item>
+
+        <item name="android:selectableItemBackgroundBorderless">@color/colorOrange</item>
+
+        <item name="colorControlHighlight">@color/orange</item>
+
+    </style>
+
+    <style parent="@style/Theme.GPRSCarLocation" name="dialog_style"/>
+
+</resources>
