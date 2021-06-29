@@ -1,123 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="@dimen/d_30">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="@dimen/d_30">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top|center_horizontal"
-        android:src="@drawable/logo_main"
-        tools:ignore="ContentDescription" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:src="@drawable/logo_main"
+            tools:ignore="ContentDescription" />
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/d_minus_20"
-        android:gravity="center_horizontal|top">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_minus_20"
+            android:gravity="center_horizontal|top">
 
         <View
-            android:layout_width="@dimen/d_15"
-            android:layout_height="@dimen/d_3"
-            android:layout_marginStart="@dimen/d_80"
-            android:layout_marginTop="@dimen/d_10"
-            android:layout_marginEnd="@dimen/d_5"
-            android:background="@color/orange" />
+                android:layout_width="@dimen/d_15"
+                android:layout_height="@dimen/d_3"
+                android:layout_marginStart="@dimen/d_80"
+                android:layout_marginTop="@dimen/d_10"
+                android:layout_marginEnd="@dimen/d_5"
+                android:background="@color/orange" />
 
         <TextView
-            android:layout_width="@dimen/d_217"
-            android:layout_height="wrap_content"
-            android:text="@string/txt_splash"
-            android:textColor="@color/black"
-            android:textSize="@dimen/s_16" />
+                android:layout_width="@dimen/d_217"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_splash"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s_16" />
     </TableRow>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/d_50"
-        android:orientation="vertical">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_50"
+            android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/txt_dang_nhap"
-            android:textColor="@color/black"
-            android:textSize="@dimen/s_20"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/edt_phone"
-            android:layout_width="@dimen/d_300"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/d_20"
-            android:autofillHints="Phone"
-            android:background="@drawable/bg_login_edt"
-            android:hint="@string/txt_phone"
-            android:inputType="phone"
-            android:padding="@dimen/d_10"
-            android:paddingStart="@dimen/d_20"
-            android:singleLine="true"
-            android:textColor="@color/white"
-            android:textColorHint="@color/lightOrange"
-            tools:ignore="RtlSymmetry" />
-
-        <EditText
-            android:id="@+id/edt_pass"
-            android:layout_width="@dimen/d_300"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/d_10"
-            android:autofillHints="Pass"
-            android:background="@drawable/bg_login_edt"
-            android:hint="@string/txt_pass"
-            android:inputType="textPassword"
-            android:padding="@dimen/d_10"
-            android:paddingStart="@dimen/d_20"
-            android:singleLine="true"
-            android:textColor="@color/white"
-            android:textColorHint="@color/lightOrange"
-            tools:ignore="RtlSymmetry" />
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="@dimen/d_20"
-            android:gravity="center">
-
-            <TextView
-                android:id="@+id/tv_forgot_pass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/txt_forgot_pass"
-                android:textColor="@color/darkOrange"
-                android:textSize="@dimen/s_18" />
-
-            <TextView
-                android:id="@+id/tv_login_btn"
-                android:layout_width="@dimen/d_140"
-                android:layout_height="@dimen/d_50"
-                android:layout_marginStart="@dimen/d_10"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
                 android:text="@string/txt_dang_nhap"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="@dimen/s_20"
                 android:textStyle="bold" />
+
+        <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="@dimen/d_300"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_20"
+                android:autofillHints="Phone"
+                android:background="@drawable/bg_login_edt"
+                android:hint="@string/txt_phone"
+                android:inputType="phone"
+                android:padding="@dimen/d_10"
+                android:paddingStart="@dimen/d_20"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lightOrange"
+                tools:ignore="RtlSymmetry" />
+
+        <EditText
+                android:id="@+id/edt_pass"
+                android:layout_width="@dimen/d_300"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_10"
+                android:autofillHints="Pass"
+                android:background="@drawable/bg_login_edt"
+                android:hint="@string/txt_pass"
+                android:inputType="textPassword"
+                android:padding="@dimen/d_10"
+                android:paddingStart="@dimen/d_20"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lightOrange"
+                tools:ignore="RtlSymmetry" />
+
+        <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/d_20"
+                android:gravity="center">
+
+            <TextView
+                    android:id="@+id/tv_forgot_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_forgot_pass"
+                    android:textColor="@color/darkOrange"
+                    android:textSize="@dimen/s_18" />
+
+            <TextView
+                    android:id="@+id/tv_login_btn"
+                    android:layout_width="@dimen/d_140"
+                    android:layout_height="@dimen/d_50"
+                    android:layout_marginStart="@dimen/d_10"
+                    android:background="@drawable/button_bg"
+                    android:gravity="center"
+                    android:text="@string/txt_dang_nhap"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s_20"
+                    android:textStyle="bold" />
         </TableRow>
 
         <TextView
-            android:id="@+id/tv_create_acc"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/d_40"
-            android:layout_marginTop="@dimen/d_10"
-            android:gravity="center"
-            android:text="@string/txt_create_new_acc"
-            android:textColor="@color/lightGray"
-            android:textSize="@dimen/s_18" />
+                android:id="@+id/tv_create_acc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_40"
+                android:layout_marginTop="@dimen/d_10"
+                android:gravity="center"
+                android:text="@string/txt_create_new_acc"
+                android:textColor="@color/lightGray"
+                android:textSize="@dimen/s_18" />
     </LinearLayout>
 </LinearLayout>

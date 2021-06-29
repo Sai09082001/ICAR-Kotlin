@@ -14,3 +14,4 @@ class M002LoginViewModel : BaseViewModel() {
         const val API_KEY_LOGIN = "API_KEY_LOGIN"
     }
 }
+

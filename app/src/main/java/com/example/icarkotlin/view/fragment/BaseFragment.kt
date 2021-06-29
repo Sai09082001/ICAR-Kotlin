@@ -5,12 +5,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
 import com.example.icarkotlin.App
+import com.example.icarkotlin.R
 import com.example.icarkotlin.view.callback.OnActionCallBack
 import com.example.icarkotlin.view.callback.OnAlertCallBack
 import com.example.icarkotlin.view.callback.OnHomeCallBack
@@ -25,6 +27,10 @@ abstract class BaseFragment<K : ViewBinding, V : BaseViewModel> : Fragment(), Vi
     var mData: Any? = null
     lateinit var mViewModel: V
     protected var binding: K? = null
+
+    companion object {
+        const val SYS_ERROR: String = "Có lỗi xảy ra!"
+    }
 
     fun <T : View> findViewById(id: Int): T? {
         return findViewById(id, null)
@@ -64,8 +70,21 @@ abstract class BaseFragment<K : ViewBinding, V : BaseViewModel> : Fragment(), Vi
         Toast.makeText(App.getInstance(), text, Toast.LENGTH_SHORT).show()
     }
 
-    override fun onClick(v: View?) {
+    final override fun onClick(v: View?) {
+        v?.startAnimation(AnimationUtils.loadAnimation(mContext, R.anim.abc_popup_enter))
+        doClickView(v)
+    }
 
+    override fun callBack(key: String, data: Any?) {
+        if (key == BaseViewModel.KEY_NOTIFY) {
+            showNotify((data ?: SYS_ERROR) as String)
+        } else if (key == BaseViewModel.KEY_ERROR) {
+            showNotify("SYS_ERROR: $data")
+        }
+    }
+
+    open fun doClickView(v: View?) {
+        TODO("Not yet implemented")
     }
 
     abstract fun initViews()

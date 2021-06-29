@@ -2,7 +2,6 @@ package com.example.icarkotlin.view.viewmodel
 
 import com.example.icarkotlin.view.api.APIRequest
 
-
 class M005ForgotPassViewModel : BaseViewModel(){
     fun checkPhone(phone: String){
         val api : APIRequest = getWS().create(APIRequest::class.java)
@@ -13,3 +12,4 @@ class M005ForgotPassViewModel : BaseViewModel(){
         const val API_CHECK_PHONE_KEY = "API_CHECK_PHONE_KEY"
     }
 }
+

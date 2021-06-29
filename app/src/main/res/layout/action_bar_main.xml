@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="56dp"
-    android:background="@color/darkOrange"
-    android:orientation="horizontal">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="56dp"
+              android:background="@color/darkOrange"
+              android:orientation="horizontal">
 
     <ImageView
-        android:id="@+id/iv_menu"
-        android:layout_width="@dimen/d_56"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:padding="10dp"
-        android:src="@drawable/ic_menu_24"
-        app:tint="@color/white"
-        tools:ignore="ContentDescription" />
+            android:id="@+id/iv_menu"
+            android:layout_width="@dimen/d_56"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:src="@drawable/ic_menu_24"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription" />
 
     <TextView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_marginStart="@dimen/d_10"
-        android:layout_weight="1"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center_vertical"
-        android:text="@string/txt_menu_title"
-        android:textColor="@color/white"
-        android:textSize="24sp" />
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="@string/txt_menu_title"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
     <ImageView
-        android:id="@+id/iv_my_location"
-        android:layout_width="@dimen/d_56"
-        android:layout_height="match_parent"
-        android:padding="@dimen/d_10"
-        android:src="@drawable/ic_my_location"
-        app:tint="@color/white"
-        tools:ignore="ContentDescription" />
+            android:id="@+id/iv_my_location"
+            android:layout_width="@dimen/d_56"
+            android:layout_height="match_parent"
+            android:padding="@dimen/d_10"
+            android:src="@drawable/ic_my_location"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/iv_car_list"
-        android:layout_width="@dimen/d_56"
-        android:layout_height="match_parent"
-        android:layout_gravity="end"
-        android:layout_marginEnd="@dimen/d_10"
-        android:padding="@dimen/d_10"
-        android:src="@drawable/ic_car_avt"
-        app:tint="@color/white"
-        tools:ignore="ContentDescription" />
+            android:id="@+id/iv_car_list"
+            android:layout_width="@dimen/d_56"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/d_10"
+            android:padding="@dimen/d_10"
+            android:src="@drawable/ic_car_avt"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription" />
 </LinearLayout>

@@ -47,7 +47,7 @@ class M001RegisterFrg : BaseFragment<FrgM001RegisterBinding, M001RegisterViewMod
         return R.layout.frg_m001_register
     }
 
-    override fun onClick(v: View?) {
+    override fun doClickView(v: View?) {
         if (v?.id == R.id.tv_register_btn) {
             phone = edtPhone?.text.toString()
             pass = edtPass?.text.toString()

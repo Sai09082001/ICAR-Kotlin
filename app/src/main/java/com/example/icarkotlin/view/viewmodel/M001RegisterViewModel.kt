@@ -30,3 +30,4 @@ class M001RegisterViewModel : BaseViewModel() {
         const val PHONE_NOT_EXIST = "Tài khoản không tồn tại"
     }
 }
+

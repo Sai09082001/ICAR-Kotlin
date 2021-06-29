@@ -1,5 +1,6 @@
 package com.example.icarkotlin.view.api
 
+import com.example.icarkotlin.view.api.model.CarInfoModelRes
 import com.example.icarkotlin.view.api.model.UserInfoModelRes
 import com.example.icarkotlin.view.api.model.entities.AccountEntity
 import com.example.icarkotlin.view.api.model.entities.UserCreateNewPassEntity
@@ -22,5 +23,13 @@ interface APIRequest {
 
     @POST("auth/forgot_password")
     @Headers("Content-Type:application/json")
-    fun createNewPass(@Body userCreateNewPassEntity: UserCreateNewPassEntity) : Call<UserInfoModelRes?>?
+    fun createNewPass(@Body userCreateNewPassEntity: UserCreateNewPassEntity): Call<UserInfoModelRes?>?
+
+    @GET("cars")
+    @Headers("Content-Type:application/json")
+    fun getListCar(
+        @Header("Authorization") token: String?,
+        @Query("page") page: Int,
+        @Query("per_page") per_page: Int
+    ): Call<CarInfoModelRes?>?
 }

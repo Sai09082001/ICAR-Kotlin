@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
     <include
-        android:id="@+id/include_actionbar"
-        layout="@layout/action_bar_main" />
+            android:id="@+id/include_actionbar"
+            layout="@layout/action_bar_main" />
 
     <androidx.drawerlayout.widget.DrawerLayout
-        android:id="@+id/drawer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white">
-
-            <fragment
-                android:id="@+id/frg_map"
-                class="com.google.android.gms.maps.SupportMapFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <LinearLayout
-                android:id="@+id/ln_list_car"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/white"
-                android:orientation="vertical"
-                android:visibility="gone">
+                android:background="@color/white">
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_car_info"
+            <fragment
+                    android:id="@+id/frg_map"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            <LinearLayout
+                    android:id="@+id/ln_list_car"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scrollbars="vertical"
-                    tools:listitem="@layout/item_m003_list_car" />
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_car_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical"
+                        tools:listitem="@layout/item_m003_list_car" />
             </LinearLayout>
         </FrameLayout>
 
         <!--Menu-->
 
         <include
-            android:id="@+id/include_menu"
-            layout="@layout/item_m003_menu"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:background="@color/teal_700" />
+                android:id="@+id/include_menu"
+                layout="@layout/item_m003_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/teal_700" />
     </androidx.drawerlayout.widget.DrawerLayout>
 </LinearLayout>

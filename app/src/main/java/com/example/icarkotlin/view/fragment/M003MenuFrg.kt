@@ -3,13 +3,17 @@ package com.example.icarkotlin.view.fragment
 import android.Manifest
 import android.app.Activity
 import android.content.pm.PackageManager
+import android.view.Gravity
 import android.view.View
 import androidx.core.app.ActivityCompat
+import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.icarkotlin.CommonUtils
 import com.example.icarkotlin.R
+import com.example.icarkotlin.Storage
 import com.example.icarkotlin.databinding.FrgM003MenuMainBinding
 import com.example.icarkotlin.view.MapManager
+import com.example.icarkotlin.view.api.model.CarInfoModelRes
 import com.example.icarkotlin.view.viewmodel.BaseViewModel
 import com.example.icarkotlin.view.viewmodel.M003MenuViewModel
 import com.google.android.gms.maps.SupportMapFragment
@@ -37,14 +41,55 @@ class M003MenuFrg : BaseFragment<FrgM003MenuMainBinding, M003MenuViewModel>() {
             }
         })
 
+        binding?.includeActionbar?.ivMenu?.setOnClickListener(this)
+        binding?.includeActionbar?.ivMyLocation?.setOnClickListener(this)
+        binding?.includeActionbar?.ivCarList?.setOnClickListener(this)
+        binding?.includeMenu?.tvLogout?.setOnClickListener(this)
+
         val mapFrg = childFragmentManager.findFragmentById(R.id.frg_map) as SupportMapFragment
-//        val mapFrg = fragmentManager?.findFragmentById(R.id.frg_map) as SupportMapFragment
         mapFrg.getMapAsync {
             MapManager.getInstance().mMap = it
             MapManager.getInstance().initMap()
         }
     }
 
+    override fun callBack(key: String, data: Any?) {
+        super.callBack(key, data)
+        if (key == M003MenuViewModel.API_KEY_GET_LIST_CAR) {
+            showListCarOnMap(data)
+        }
+    }
+
+    private fun showListCarOnMap(data: Any?) {
+        if (data == null) return
+        MapManager.getInstance().showListCar(data as CarInfoModelRes)
+    }
+
+    override fun doClickView(v: View?) {
+        when (v?.id) {
+            R.id.iv_menu -> {
+                binding?.drawer?.openDrawer(GravityCompat.START)
+            }
+            R.id.iv_my_location -> {
+                MapManager.getInstance().showMyLocation()
+            }
+            R.id.iv_car_list -> {
+                mViewModel.getListCar()
+            }
+            R.id.tv_logout -> {
+                logout()
+            }
+        }
+    }
+
+    override fun logout() {
+        CommonUtils.getInstance().clearPref(BaseViewModel.PHONE)
+        CommonUtils.getInstance().clearPref(BaseViewModel.TOKEN)
+        CommonUtils.getInstance().clearPref(BaseViewModel.USER_NAME)
+        Storage.getInstance().clearAll()
+        MapManager.getInstance().stopHandleLocation()
+        callBack?.showFrg(TAG, M002LoginFrg.TAG, false)
+    }
     private fun checkPermission() {
         if (ActivityCompat.checkSelfPermission(
                 mContext,

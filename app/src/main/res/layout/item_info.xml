@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:padding="30dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="vertical">
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_56"
+                android:background="@color/colorOrange"
+                android:gravity="center">
+
+            <ImageView
+                    android:id="@+id/iv_back_press_dialog"
+                    android:layout_width="@dimen/d_56"
+                    android:layout_height="@dimen/d_56"
+                    android:paddingHorizontal="@dimen/d_10"
+                    android:paddingStart="@dimen/d_15"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/white" />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_56"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/d_30"
+                    android:text="@string/txt_car_info"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d_20"
+                    android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_car_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_car_license_plate"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/d_14"
+                        android:textStyle="bold" />
+
+                <ImageView
+                        android:layout_width="@dimen/d_40"
+                        android:layout_height="@dimen/d_40"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_car_ava_list_car" />
+
+                <TextView
+                        android:id="@+id/tv_car_name_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/d_5"
+                        android:text="@string/txt_car_name"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/d_14"
+                        android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/d_20">
+
+                <TextView
+                        android:id="@+id/tv_car_status_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_car_status"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/d_16" />
+
+                <TextView
+                        android:id="@+id/tv_car_speed_info"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/d_5"
+                        android:text="@string/txt_car_speed"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/d_16" />
+
+                <TextView
+                        android:id="@+id/tv_car_location_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vị trí: "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/d_16" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/d_10"
+                android:layout_marginTop="@dimen/d_5">
+
+            <TextView
+                    android:id="@+id/tv_monitor_car_btn_info"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/d_40"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_login_edt"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/d_10"
+                    android:text="@string/txt_monitor"
+                    android:elevation="5dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d_14"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/tv_time_line_btn_info"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/d_40"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="@dimen/d_20"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_login_edt"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/d_10"
+                    android:text="@string/txt_time_line"
+                    android:textAllCaps="true"
+                    android:elevation="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d_14"
+                    android:textStyle="bold" />
+        </TableRow>
+
+    </LinearLayout>
+</FrameLayout>

@@ -23,10 +23,6 @@ import javax.net.ssl.HostnameVerifier
 
 abstract class BaseViewModel : ViewModel() {
     val ex = MutableLiveData(false)
-    val token: String?
-        get() = CommonUtils.getInstance().getPref(TOKEN)
-    val storage: Storage?
-        get() = App.storage
     protected var mCallback: OnActionCallBack? = null
     protected fun <T> initResponse(key: String) : Callback<T>{
         return object : Callback<T>{
@@ -60,7 +56,7 @@ abstract class BaseViewModel : ViewModel() {
             }
             when (code){
                 CODE_400 -> if (errorBody != null) {
-                    notifyToView(if (err != null) err.message else errorBody.string())
+                    notifyToView(err?.message ?: errorBody.string())
                 }
                 CODE_401 -> {
                     notifyToView("Thông tin đăng nhập sai hoặc tài khoản đã hết hạn, hãy thử đăng nhập lại!")
